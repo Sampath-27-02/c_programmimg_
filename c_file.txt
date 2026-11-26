@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int num;
+    char arr[10][10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    int b;
+    if(num==10){
+        printf("Ten");
+        return 0;
+    }
+    if(num>=20){
+        b=num-num%10;
+    }
+    switch(num){
+        case 11:
+        printf("Eleven"); 
+        return 0;
+        case 12:
+        printf("Twelve");
+        return 0;
+        case 13:
+        printf("Thirteen");
+        return 0;
+        case 14:
+        printf("Fourteen");
+        return 0;
+        case 15:
+        printf("Fifteen");
+        return 0;
+        case 16:
+        printf("Sixteen");
+        return 0;
+        case 17:
+        printf("Seventeen");
+        return 0;
+        case 18:
+        printf("Eighteen");
+        return 0;
+        case 19:
+        printf("Nineteen");
+        return 0;
+    }
+    switch(b){
+        case 20:
+        printf("Twenty");
+        break;
+        case 30:
+        printf("Thirty");
+        break;
+        case 40:
+        printf("Fourty");
+        break;
+        case 50:
+        printf("Fifty");
+        break;
+        case 60:
+        printf("Sixty");
+        break;
+        case 70:
+        printf("Seventy");
+        break;
+        case 80:
+        printf("Eighty");
+        break;
+        case 90:
+        printf("Ninety");
+        break;
+    }
+    if(b==num)
+        return 0;
+    else{
+        printf(" %s",arr[num%10]);
+    }
+    return 0;
+}
